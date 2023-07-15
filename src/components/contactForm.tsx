@@ -18,6 +18,7 @@ export default function ContactForm() {
                 Your phone number
             </p>
             <p className={`${subFont.className} text-[18px] text-subTextInvert pb-[10px] text-opacity-80`}>
+                {/* eslint-disable-next-line react/no-unescaped-entities */}
                 So we can get back to you - we won't use it for any other reason
             </p>
             <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"} />
