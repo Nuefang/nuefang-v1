@@ -15,7 +15,7 @@ export default function HeaderSub(props: HeaderSubProps) {
             <p className={`${props.color} text-[40px] -tracking-[1.2px] max-w-[500px]`}>
                 {props.text}
             </p>
-            <div className={"flex flex-row items-center justify-start md:space-x-[190px] lg:space-x-[500px] max-w-[90vw]"}>
+            <div className={"flex flex-row items-center justify-start md:space-x-[190px] lg:space-x-[800px] max-w-[90vw]"}>
                 <p className={`${props.color} ${subFont.className} text-[24px] max-w-[500px]`}>
                     {props.sub}
                 </p>

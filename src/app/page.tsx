@@ -21,7 +21,7 @@ export default function Home() {
         </div>
         <div className={"bg-lightGrey pb-[12svh] min-h-[100svh]"}>
           <Header
-              text={"We design and develop websites from the ground up"}
+              text={"We design and develop bespoke websites from the ground up"}
               color={"white"}
               width={"lg:max-w-[912px]"}
           />
@@ -31,7 +31,7 @@ export default function Home() {
           <Header
               text={"Our team has combined experience working with some of the worlds most successful brands"}
               color={"black"}
-              width={"lg:max-w-[1100px]"}
+              width={"lg:max-w-[1350px]"}
           />
           <LogoRow />
         </div>
@@ -47,12 +47,12 @@ export default function Home() {
           <Header
               text={"Why choose nuefang to create your website?"}
               color={"black"}
-              width={"md:max-w-[350px]"}
+              width={"lg:max-w-[1350px]"}
           />
           <FourColumn />
         </div>
         <div className={"bg-white w-[100vw] min-h-[90svh] relative pb-[12svh]"}>
-          <div className={"absolute w-[40vw] md:w-[20vw] top-[0%] right-0 h-[80px] md:h-[113px] bg-lightYellow z-10"} />
+          <div className={"absolute w-[40vw] md:w-[20vw] lg:w-[55vw] top-[0%] right-0 h-[80px] md:h-[113px] bg-lightYellow z-10"} />
           <HeaderSub text={"Our work"} sub={"A selection of recent projects"} color={"text-subText"} />
           <Carousel />
           <div className={"md:hidden flex flex-row items-center justify-start space-x-[20px] max-w-[100%] pt-[2vh] pl-[32px]"}>

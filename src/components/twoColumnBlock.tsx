@@ -12,7 +12,7 @@ const subFont = Roboto({ weight: "100", subsets: ['latin'] })
 
 export default function TwoColumnBlock(props: TwoColumnBlock) {
     return (
-        <div className={"flex flex-col items-start justify-center w-[100%] md:w-[493px]"}>
+        <div className={"flex flex-col items-start justify-center w-[100%] md:w-[493px] lg:w-[560px]"}>
             <Image src={`/headshots/${props.src}.png`} alt={props.title} width={493} height={550} />
             <p className={"text-white pt-[32px] text-[40px]"}>{props.title}</p>
             <p className={"text-white text-[30px]"}>{props.sub}</p>
