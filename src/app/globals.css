@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navLink {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 20px;
+    color: black;
+    letter-spacing: -0.6px;
+}
