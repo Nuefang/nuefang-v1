@@ -2,7 +2,7 @@ import ColumnBlock from "@/components/columnBlock";
 
 export default function FourColumn() {
     return (
-        <div className={"flex flex-col m-0 md:flex-row pt-[64px] md:pt-[91px] items-center justify-center space-y-[32px] md:space-y-0 md:space-x-[8px] lg:space-x-[32px]"}>
+        <div className={"flex flex-col m-0 lg:flex-row pt-[64px] lg:pt-[91px] items-center justify-center space-y-[32px] lg:space-y-0 lg:space-x-[32px]"}>
             <ColumnBlock
                 title={"Bespoke solutions"}
                 sub={"Every business is different. Different goals, different challenges and different customers. We work closely with clients to define exactly what they need from their website; every website we build is a collaboration."}

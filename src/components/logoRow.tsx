@@ -2,8 +2,8 @@ import Logo from "@/components/logo";
 
 export default function LogoRow() {
     return (
-        <div className="grid w-[95%] lg:max-w-[1060px] pl-[16px] md:pl-[121px] pt-[64px]">
-            <div className="grid place-items-center grid-cols-2 md:grid-cols-4 gap-6 md:gap-12">
+        <div className="grid w-[95%] lg:max-w-[1060px] pl-[16px] md:pr-[128px] pt-[64px]">
+            <div className="grid place-items-center grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
                 <Logo src={"microsoft"} alt={"Microsoft"} width={189} height={40} />
                 <Logo src={"hisense"} alt={"Hisense"} width={160} height={33} />
                 <Logo src={"xbox"} alt={"Xbox"} width={139} height={42} />

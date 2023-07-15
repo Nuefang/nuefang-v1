@@ -9,3 +9,37 @@
     color: black;
     letter-spacing: -0.6px;
 }
+
+.cta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.ctaText {
+    color: black;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin: 8px;
+}
+
+.ctaWhite {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.ctaTextWhite {
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    margin: 8px;
+}
+
+.contactChild {
+    width: calc(50% - 10px)
+}

@@ -11,7 +11,7 @@ interface CarouselItemProps {
 }
 export default function CarouselItem(props: CarouselItemProps) {
     return (
-        <div className={`flex flex-col shrink-0 h-[75vw] w-[75vw] max-w-[340px] max-h-[340px] min-w-[250px] min-h-[250px] p-[32px] lg:w-[33vw] lg:h-[33vw] lg:max-w-[500px] lg:max-h-[500px]`}
+        <div className={`flex flex-col justify-end items-start shrink-0 h-[75vw] w-[75vw] max-w-[340px] max-h-[340px] min-w-[250px] min-h-[250px] p-[32px] md:max-w-[500px] md:max-h-[440px]`}
              style={{backgroundImage: `url("/carousel/${props.src}.png")`}}
         >
             <p className={`${subFont.className} text-white text-[16px] -tracking-[0.48px] mt-[55%]`}>{props.brand}</p>
