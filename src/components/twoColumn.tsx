@@ -2,7 +2,7 @@ import TwoColumnBlock from "@/components/twoColumnBlock";
 
 export default function TwoColumn() {
     return (
-        <div className={"flex flex-col space-y-[96px] md:space-y-[64px] lg:space-y-0 lg:flex-row pt-[32px] md:pt-[64px] items-center lg:justify-start justify-around lg:space-x-32 pl-[16px] lg:pl-[128px] w-[96%] md:w-[92%]"}>
+        <div className={"flex flex-col m-0 lg:flex-row pt-[64px] lg:pl-0 lg:mx-[128px] pl-0 md:pl-[64px] items-center md:items-start justify-center lg:px-0 lg:justify-between space-y-[32px] lg:space-y-0"}>
             <TwoColumnBlock
                 title={"Karl"}
                 sub={"Developer & Co-founder"}
