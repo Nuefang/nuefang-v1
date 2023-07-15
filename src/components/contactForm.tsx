@@ -22,7 +22,7 @@ export default function ContactForm() {
                 So we can get back to you - we won't use it for any other reason
             </p>
             <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"} />
-            <a className={'ctaWhite w-[85vw] mt-[64px] md:mt-[32px] md:w-[150px] h-[60px]'}>
+            <a className={'globalHoverInvert ctaWhite w-[85vw] mt-[64px] md:mt-[32px] md:w-[150px] h-[60px]'}>
                 <p className={'ctaTextWhite'}>
                     Submit form
                 </p>

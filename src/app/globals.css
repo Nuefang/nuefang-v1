@@ -33,13 +33,47 @@
     border: 2px solid white;
 }
 
+.ctaWhite:hover {
+    cursor: pointer;
+}
+
 .ctaTextWhite {
     color: white;
     font-size: 20px;
     letter-spacing: 0.6px;
     margin: 8px;
+    transition-duration: 300ms;
+}
+
+.ctaTextWhite:hover {
+    color: #0E0E0E;
 }
 
 .contactChild {
     width: calc(50% - 10px)
+}
+
+.globalHover {
+    background-color: white;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.globalHover:hover {
+    background-color: #F7FF58;
+    cursor: pointer;
+}
+
+.globalHoverInvert {
+    background-color: #0E0E0E;
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.globalHoverInvert:hover {
+    background-color: #F7FF58;
+    color: #0E0E0E;
+    cursor: pointer;
 }

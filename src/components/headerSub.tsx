@@ -20,8 +20,8 @@ export default function HeaderSub(props: HeaderSubProps) {
                     {props.sub}
                 </p>
                 <div className={"hidden md:flex md:flex-row md:items-center justify-around space-x-[32px] max-w-[200px]"}>
-                    <Image src={"/icons/arrow_back.png"} alt={"Slide Left"} width={40} height={40} />
-                    <Image src={"/icons/arrow_next.png"} alt={"Slide Right"} width={40} height={40} />
+                    <Image src={"/icons/arrow_back.png"} alt={"Slide Left"} width={40} height={40} className={"globalHover"} />
+                    <Image src={"/icons/arrow_next.png"} alt={"Slide Right"} width={40} height={40} className={"globalHover"} />
                 </div>
             </div>
         </div>

@@ -19,7 +19,7 @@ export default function Home() {
           <Navbar />
           <Hero />
         </div>
-        <div className={"bg-lightGrey pb-[12svh] min-h-[100svh]"}>
+        <div id={"about"} className={"bg-lightGrey pb-[12svh] min-h-[100svh]"}>
           <Header
               text={"We design and develop bespoke websites from the ground up"}
               color={"white"}
@@ -51,16 +51,16 @@ export default function Home() {
           />
           <FourColumn />
         </div>
-        <div className={"bg-white w-[100vw] min-h-[90svh] relative pb-[12svh]"}>
+        <div id={"work"} className={"bg-white w-[100vw] min-h-[90svh] relative pb-[12svh]"}>
           <div className={"absolute w-[40vw] md:w-[20vw] lg:w-[55vw] top-[0%] right-0 h-[80px] md:h-[113px] bg-lightYellow z-10"} />
           <HeaderSub text={"Our work"} sub={"A selection of recent projects"} color={"text-subText"} />
           <Carousel />
           <div className={"md:hidden flex flex-row items-center justify-start space-x-[20px] max-w-[100%] pt-[2vh] pl-[32px]"}>
-            <Image src={"/icons/arrow_back.png"} alt={"Slide Left"} width={40} height={40} />
-            <Image src={"/icons/arrow_next.png"} alt={"Slide Right"} width={40} height={40} />
+            <Image src={"/icons/arrow_back.png"} alt={"Slide Left"} width={40} height={40} className={"globalHover"} />
+            <Image src={"/icons/arrow_next.png"} alt={"Slide Right"} width={40} height={40} className={"globalHover"} />
           </div>
         </div>
-        <div className={"flex flex-col items-start justify-start bg-lightGrey w-[100vw] min-h-[100svh] pb-[12svh]"}>
+        <div id={"contact"} className={"flex flex-col items-start justify-start bg-lightGrey w-[100vw] min-h-[100svh] pb-[12svh]"}>
           <Header
               text={"Want to work with us?"}
               color={"black"}
