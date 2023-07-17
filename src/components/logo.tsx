@@ -10,7 +10,7 @@ interface LogoProps {
 export default function Logo(props: LogoProps) {
     return (
         <Image src={`/brands/${props.src}.png`} alt={props.alt} width={props.width} height={props.height}
-               className={"p-[8px]"}
+               className={"m-[32px]"}
         />
     )
 }

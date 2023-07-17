@@ -5,7 +5,7 @@ const subFont = Roboto({ weight: "300", subsets: ['latin'] })
 
 export default function ContactForm() {
     return (
-        <div className={"flex flex-col pt-[64px] pl-[16px] md:pl-[64px]"}>
+        <div className={"flex flex-col pt-[64px] pl-[16px] md:pl-[64px] lg:pl-[128px]"}>
             <p className={`${font.className} text-[18px] text-white pb-[10px]`}>
                 What industry is your business
             </p>
@@ -22,7 +22,7 @@ export default function ContactForm() {
                 So we can get back to you - we won't use it for any other reason
             </p>
             <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"} />
-            <a className={'globalHoverInvert ctaWhite w-[85vw] mt-[64px] md:mt-[32px] md:w-[150px] h-[60px]'}>
+            <a className={'hover:bg-lightYellow hover:duration-300 hover:text-lightGrey hover:border-0 rounded-xl ctaWhite w-[85vw] mt-[64px] md:mt-[32px] md:w-[150px] h-[60px]'}>
                 <p className={'ctaTextWhite'}>
                     Submit form
                 </p>
