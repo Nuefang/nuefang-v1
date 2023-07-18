@@ -40,6 +40,7 @@ export default function ContactForm() {
                 <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"}
                        value={industry}
                        onChange={(e) => setIndustry(e.target.value)}
+                       required
                 />
                 <p className={`${font.className} w-[85vw] text-[18px] text-white pt-[64px] pb-[10px]`}>
                     What is your budget?
@@ -47,6 +48,7 @@ export default function ContactForm() {
                 <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"}
                        value={budget}
                        onChange={(e) => setBudget(e.target.value)}
+                       required
                 />
                 <p className={`${font.className} w-[85vw] text-[18px] pt-[64px] text-white`}>
                     Your phone number
@@ -58,6 +60,7 @@ export default function ContactForm() {
                 <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Input"}
                        value={phoneNumber}
                        onChange={(e) => setPhoneNumber(e.target.value)}
+                       required
                 />
                 <button className={`${sentEmail ? "hover:bg-green-400" : "hover:bg-lightYellow"} hover:duration-300 hover:text-lightGrey hover:border-0 rounded-xl ctaWhite w-[85vw] mt-[64px] md:mt-[32px] sm:w-[150px] h-[60px]`}
                     type={sentEmail ? undefined : "submit"}
