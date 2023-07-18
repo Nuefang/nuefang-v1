@@ -11,7 +11,9 @@ export default function Footer() {
                 This is all fake for now © Copyright Nuefang Limited<br />
                 Registration No: 000000 | Registered address: La Salle, Chadwick Street Leeds, LS1 1NW
             </p>
-            <Image src={'/footer.png'} alt={'Nuefang Footer'} height={150} width={600} className={"order-2 md:order-1 pt-[32px] md:pt-[128px]"} />
+            <a href={"/"}>
+                <Image src={'/footer.png'} alt={'Nuefang Footer'} height={150} width={600} className={"order-2 md:order-1 pt-[32px] md:pt-[128px]"} />
+            </a>
         </div>
     )
 }

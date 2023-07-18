@@ -7,13 +7,14 @@ export default function TwoColumn() {
                 title={"Karl"}
                 sub={"Developer & Co-founder"}
                 copy={"Expertise in all things digital, Karl has a passion for delivering high quality products that provide brilliant user experiences. Whether your project needs to catch the eye, or handle a lot of data, Karl is on board to assist."}
-                src={"karlUnion"}
+                src={"karl"}
             />
+            <div className={"md:pb-[64px] lg:pb-0"}></div>
             <TwoColumnBlock
                 title={"Jacob"}
                 sub={"Designer & Co-founder"}
                 copy={"From local sole traders to international corporations Jacob has vast experience designing digital solutions. He prides himself on understanding the unique needs of each client and providing them with a tangible ROI."}
-                src={"rockUnion"}
+                src={"jacob"}
             />
         </div>
     )

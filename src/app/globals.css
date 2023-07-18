@@ -102,3 +102,45 @@
     border-radius: 0.75rem;
     transition: transform 0.4s, border-radius 0.4s, color 0.4s;
 }
+
+.fade-in-to-upper-right {
+    animation-duration: 0.4s;
+    animation-name: fade-in-to-upper-right;
+}
+
+.fade-out-to-lower-left {
+    animation-duration: 0.4s;
+    animation-name: fade-out-to-lower-left;
+}
+
+@keyframes fade-in-to-upper-right {
+    from {
+        opacity: 0;
+        top: 350px;
+        left: 0px;
+        scale: 0;
+    }
+
+    to {
+        opacity: 1;
+        top: 150px;
+        left: 150px;
+        scale: 1;
+    }
+}
+
+@keyframes fade-out-to-lower-left {
+    from {
+        opacity: 1;
+        top: 150px;
+        left: 150px;
+        scale: 1;
+    }
+
+    to {
+        opacity: 0;
+        top: 350px;
+        left: 0px;
+        scale: 0;
+    }
+}

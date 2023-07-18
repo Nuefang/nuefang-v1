@@ -53,7 +53,7 @@ export default function Home() {
           />
           <LogoRow />
           <Image src={'/brands/brand_1.png'} alt={"Nuefang Brand"} height={620} width={550}
-                 className={"absolute bottom-0 right-0"} />
+                 className={"absolute bottom-0 right-0 max-w-[230px] md:max-w-[300px] lg:max-w-[100vw]"} />
         </div>
         {/*<div id={"work"} className={"bg-white w-[100vw] min-h-[90svh] relative pb-[12svh]"}>*/}
         {/*  <div className={"absolute w-[40vw] md:w-[20vw] lg:w-[55vw] top-[0%] right-0 h-[80px] md:h-[113px] bg-lightYellow z-10"} />*/}
