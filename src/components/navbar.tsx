@@ -16,7 +16,7 @@ export default function Navbar() {
             <div className={"flex flex-row justify-between items-center text-center md:space-x-[32px] md:mr-[64px]"}>
                 <button className={"navLink globalHover text-[16px] md:text-[20px]"} onClick={()=> {scroll('#whatWeDo')}}>What we do</button>
                 <button className={"navLink globalHover text-[16px] md:text-[20px]"} onClick={()=> {scroll('#about')}}>About us</button>
-                <button className={"navLink globalHover border-0 md:border-2 border-black text-[16px] md:text-[20px]"} onClick={()=> {scroll('#contact')}}>Contact us</button>
+                <button className={"navLink globalHover border-0 md:border-2 border-black text-[16px] md:text-[20px]"} onClick={()=> {scroll('#contact')}}>Contact</button>
             </div>
         </nav>
     )

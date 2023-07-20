@@ -3,17 +3,18 @@ import Logo from "@/components/logo";
 export default function LogoRow() {
     return (
         <div className="grid w-[95%] lg:max-w-[1060px] pl-[16px] lg:pl-[128px] md:pr-[128px] lg:pr-0 pt-[64px]">
-            <div className="grid place-items-center grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-12">
-                <Logo src={"microsoft"} alt={"Microsoft"} width={189} height={40} />
-                <Logo src={"hisense"} alt={"Hisense"} width={160} height={33} />
-                <Logo src={"xbox"} alt={"Xbox"} width={139} height={42} />
-                <Logo src={"related_argent"} alt={"Related Argent"} width={179} height={33} />
-                <Logo src={"minecraft"} alt={"Minecraft"} width={153} height={31} />
-                <Logo src={"flutter"} alt={"Flutter"} width={138} height={34} />
-                <Logo src={"plsf"} alt={"Premier League Stadium Fund"} width={148} height={68} />
-                <Logo src={"morrisons"} alt={"Morrisons"} width={123} height={70} />
-                <Logo src={"minecraft"} alt={"Minecraft"} width={153} height={31} />
-                <Logo src={"flutter"} alt={"Flutter"} width={138} height={34} />
+            <div className="grid place-items-center grid-cols-2 lg:grid-cols-4 lg:gap-4">
+                <Logo src={"MS"} alt={"Microsoft"} />
+                <Logo src={"PLSF"} alt={"Premier League Stadium Fund"} />
+                <Logo src={"Xbox"} alt={"Xbox"} />
+                <Logo src={"FF"} alt={"Football Foundation"} />
+                <Logo src={"MC"} alt={"Minecraft"} />
+                <Logo src={"Bud"} alt={"Budweiser Brewing Group"} />
+                <Logo src={"Moz"} alt={"Morrisons"} />
+                <Logo src={"Hisense"} alt={"Hisense"} />
+                <Logo src={"Ngas"} alt={"Northern Gas"} />
+                <Logo src={"RRgent"} alt={"Related Argent"} />
+                <Logo src={"TIQ"} alt={"The Island Quarter"} />
             </div>
         </div>
     )

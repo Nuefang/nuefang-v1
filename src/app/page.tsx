@@ -1,10 +1,7 @@
 import Navbar from "@/components/navbar";
-import Hero from "@/components/hero";
 import Header from "@/components/header";
 import ThreeColumn from "@/components/threeColumn";
 import TwoColumn from "@/components/twoColumn";
-import HeaderSub from "@/components/headerSub";
-import Carousel from "@/components/carousel";
 import ContactUs from "@/components/contactUs";
 import LogoRow from "@/components/logoRow";
 import Image from "next/image";
@@ -29,12 +26,14 @@ export default function Home() {
           <ThreeColumn />
         </div>
         <div id={"about"} className={"bg-white w-[100vw] min-h-[100svh] pb-[12svh]"}>
-          <Header
-              text={"Our team"}
-              color={"black"}
-              width={""}
-              center={true}
-          />
+            <div className={"flex flex-row justify-center items-center md:block"}>
+              <Header
+                  text={"One designer, one developer"}
+                  color={"black"}
+                  width={"max-w-[250px] md:max-w-[100vw]"}
+                  center={true}
+              />
+            </div>
           <TwoColumn />
         </div>
         <div className={"bg-lightGrey w-[100vw] min-h-[100svh] pb-[12svh]"}>
@@ -47,7 +46,7 @@ export default function Home() {
         </div>
         <div className={"bg-white w-[100vw] min-h-[100svh] pb-[12svh] relative"}>
           <Header
-              text={"Our team bring experience working with some of the worlds most successful brands"}
+              text={"Our team has combined experience working with some of the worlds most successful brands"}
               color={"black"}
               width={"lg:max-w-[1400px]"}
           />

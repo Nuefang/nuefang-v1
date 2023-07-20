@@ -53,6 +53,17 @@
     width: calc(50% - 10px)
 }
 
+.dropShadow {
+    filter: drop-shadow(0px 6px 16px rgba(0,0,0,6%));
+}
+
+@media only screen and (max-width: 1023px) {
+    .globalHover {
+        background-color: white;
+        border-radius: 0.75rem;
+    }
+}
+
 .globalHover {
     background-color: white;
     transition-property: background-color, border-color, color, fill, stroke;
@@ -66,6 +77,14 @@
     cursor: pointer;
 }
 
+@media only screen and (max-width: 1023px) {
+    .globalHoverInvert {
+        z-index: 1;
+        position: relative;
+        background-color: #0E0E0E;
+    }
+}
+
 .globalHoverInvert {
     z-index: 1;
     position: relative;
@@ -74,43 +93,42 @@
     transition: transform 0.4s, border-radius 0.4s, color 0.4s;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media only screen and (min-width: 1024px) {
+    .globalHoverInvert:after {
+        background-color: #F7FF58;
+        color: #0E0E0E;
+        border-radius: 0.75rem;
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: bottom center;
+        z-index: -1;
+        transition: transform 0.4s, border-radius 0.4s, color 0.4s;
+    }
 
+    .globalHoverInvert:hover::after {
+        transform: scaleY(1);
+        transition: transform 0.4s, border-radius 0.4s, color 0.4s;
+    }
 
-.globalHoverInvert:after {
-    background-color: #F7FF58;
-    color: #0E0E0E;
-    border-radius: 0.75rem;
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: scaleY(0);
-    transform-origin: bottom center;
-    z-index: -1;
-    transition: transform 0.4s, border-radius 0.4s, color 0.4s;
-}
+    .globalHoverInvert:hover {
+        color: #0E0E0E;
+        border-radius: 0.75rem;
+        transition: transform 0.4s, border-radius 0.4s, color 0.4s;
+    }
+    .fade-in-to-upper-right {
+        animation-duration: 0.4s;
+        animation-name: fade-in-to-upper-right;
+    }
 
-.globalHoverInvert:hover::after {
-    transform: scaleY(1);
-    transition: transform 0.4s, border-radius 0.4s, color 0.4s;
-}
-
-.globalHoverInvert:hover {
-    color: #0E0E0E;
-    border-radius: 0.75rem;
-    transition: transform 0.4s, border-radius 0.4s, color 0.4s;
-}
-
-.fade-in-to-upper-right {
-    animation-duration: 0.4s;
-    animation-name: fade-in-to-upper-right;
-}
-
-.fade-out-to-lower-left {
-    animation-duration: 0.4s;
-    animation-name: fade-out-to-lower-left;
+    .fade-out-to-lower-left {
+        animation-duration: 0.4s;
+        animation-name: fade-out-to-lower-left;
+    }
 }
 
 @keyframes fade-in-to-upper-right {
