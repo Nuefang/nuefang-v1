@@ -6,7 +6,23 @@ const inter = Metrophobic({ weight: "400", subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Nuefang',
-  description: 'Nuefang - Digital Agency based in West Yorkshire',
+  description: 'Nuefang - Based in West Yorkshire',
+  openGraph: {
+    type: "website",
+    url: "https://nuefang.com",
+    title: "Nuefang",
+    description: "Nuefang - Based in West Yorkshire",
+    siteName: "Nuefang",
+    images: [{
+      url: "https://nuefang.com/icons/og.jpg",
+    }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Nuefang",
+    creator: "@Nuefang",
+    "images": "https://nuefang.com/icons/og.jpg"
+  }
 }
 
 export default function RootLayout({
@@ -23,6 +39,7 @@ export default function RootLayout({
         <link rel="icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-chrome-192x192.png" />
         <link rel="icon" type="image/png" sizes="512x512" href="/favicon/android-chrome-512x512.png" />
+        <meta property="og:image:alt" content="Nuefang - Based in West Yorkshire" />
       </head>
       <body className={`${inter.className} overflow-x-hidden w-[100vw]`}>{children}</body>
     </html>
