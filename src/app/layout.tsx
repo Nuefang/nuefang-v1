@@ -5,6 +5,7 @@ import { Metrophobic } from 'next/font/google'
 const inter = Metrophobic({ weight: "400", subsets: ['latin'] })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://nuefang.com'),
   title: 'Nuefang',
   description: 'Nuefang - Based in West Yorkshire',
   openGraph: {
