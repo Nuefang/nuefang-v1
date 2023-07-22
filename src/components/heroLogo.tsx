@@ -12,14 +12,14 @@ export default function HeroLogo() {
 
     return (
         <div className={"flex flex-col justify-center items-center"}>
-            <div className={"max-w-[300px] md:max-w-[400px] min-h-[400px] pt-[128px]"}>
+            <div className={"max-w-[300px] md:max-w-[400px] min-h-[400px] pt-[64px] md:pt-[128px]"}>
                 <Lottie
                     animationData={animationData}
                     loop={true}
                     autoplay={true}
                 />
             </div>
-            <p className={"text-[30px] md:text-[40px] pt-[128px] lg:pt-[64px] pb-[32px] text-center"}>
+            <p className={"text-[30px] md:text-[40px] pt-[64px] pb-[32px] text-center"}>
                 Welcome to nuefang
             </p>
             <button onClick={() => {scroll('#whatWeDo')}}>
