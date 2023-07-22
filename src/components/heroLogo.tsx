@@ -19,7 +19,7 @@ export default function HeroLogo() {
                     autoplay={true}
                 />
             </div>
-            <p className={"text-[30px] md:text-[40px] pt-[64px] pb-[32px] text-center"}>
+            <p className={"text-[30px] md:text-[40px] pt-[32px] md:pt-[64px] pb-[32px] text-center"}>
                 Welcome to nuefang
             </p>
             <button onClick={() => {scroll('#whatWeDo')}}>
