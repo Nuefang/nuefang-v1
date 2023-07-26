@@ -76,12 +76,12 @@ export default function ContactForm() {
                 />
                 <div className={"flex flex-row justify-start items-center space-x-4 pt-[32px] pb-[10px]"}>
                     <p className={`${font.className} pt-[16px] text-[18px text-white`}>
-                        I accept the <a href={"/privacy"} className={"underline"}>Privacy Policy</a>
+                        I accept the <a target={"_blank"} href={"/privacy"} className={"underline"}>Privacy Policy</a>
                     </p>
-                    <label className="checkbox-contain">
-                        <input type="checkbox" required defaultChecked={false} checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
+                    <div className="checkbox-contain">
+                        <input type="checkbox" required checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
                         <div className="checkbox-input"></div>
-                    </label>
+                    </div>
                 </div>
 
 

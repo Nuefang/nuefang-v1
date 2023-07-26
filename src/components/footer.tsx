@@ -11,8 +11,8 @@ export default function Footer() {
                 <Image src={'/footer.png'} alt={'Nuefang Footer'} height={50} width={300} className={"pt-[64px] md:pt-[128px]"} />
             </a>
             <div className={`flex flex-row justify-start space-x-4 ${subFont.className} text-white text-[18px] text-opacity-80 pt-[8px] md:pt-[16px] w-[87%] md:w-[100%] md:max-w-[640px] lg:max-w-[1200px]`}>
-                <a href="/privacy#cookies">Cookie Policy</a>
-                <a href="/privacy">Privacy Policy</a>
+                <a target={"_blank"} href="/privacy#cookies">Cookie Policy</a>
+                <a target={"_blank"} href="/privacy">Privacy Policy</a>
             </div>
         </div>
     )

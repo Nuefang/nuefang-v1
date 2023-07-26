@@ -14,7 +14,7 @@ export default function ContactUs() {
             {/*</div>*/}
             <div className={""}>
                 <p className={`${subFont.className} text-lightYellow text-[18px] pt-[64px] md:pt-0`}>Follow us</p>
-                <p className={"text-white text-[30px] -tracking-[0.9px]"}>@nuefang</p>
+                <a href={"https://www.instagram.com/nuefang/"} target={"_blank"} className={"text-white text-[30px] -tracking-[0.9px]"}>@nuefang</a>
             </div>
         </div>
     )
