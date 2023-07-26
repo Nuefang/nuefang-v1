@@ -7,13 +7,13 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
     return (
-        <>
+        <div className={"h-[128px] lg:h-[96px] flex flex-row justify-around items-center"}>
             <Image src={`/brands/M_${props.src}.png`} alt={props.alt} width={370} height={264}
-                   className={"m-[32px] z-10 block md:hidden dropShadow"}
+                   className={"z-10 block md:hidden dropShadow"}
             />
-            <Image src={`/brands/D_${props.src}.png`} alt={props.alt} width={544} height={264}
-                   className={"m-[32px] z-10 hidden md:block dropShadow"}
+            <Image src={`/brands/D_${props.src}.png`} alt={props.alt} height={264} width={800}
+                   className={"z-10 hidden md:block dropShadow"}
             />
-        </>
+        </div>
     )
 }

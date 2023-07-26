@@ -7,12 +7,12 @@ const inter = Metrophobic({ weight: "400", subsets: ['latin'] })
 export const metadata: Metadata = {
   metadataBase: new URL('https://nuefang.com'),
   title: 'Nuefang',
-  description: 'Nuefang - Based in West Yorkshire',
+  description: 'Welcome to Nuefang - Our Leeds-based team design and develop bespoke websites from the ground up.',
   openGraph: {
     type: "website",
     url: "https://nuefang.com",
     title: "Nuefang",
-    description: "Nuefang - Based in West Yorkshire",
+    description: "Welcome to Nuefang - Our Leeds-based team design and develop bespoke websites from the ground up.",
     siteName: "Nuefang",
     images: [{
       url: "https://nuefang.com/icons/og.jpg",

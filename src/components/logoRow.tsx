@@ -2,7 +2,7 @@ import Logo from "@/components/logo";
 
 export default function LogoRow() {
     return (
-        <div className="grid w-[95%] lg:max-w-[1060px] pl-[16px] lg:pl-[128px] md:pr-[128px] lg:pr-0 pt-[64px]">
+        <div className="flex flex-row justify-center items-center max-w-[400px] md:max-w-[800px] md:w-[800px] lg:max-w-[1000px] lg:w-[1000px] pl-[16px] lg:pl-[128px] md:pl-[128px] md:pr-[128px] lg:pr-0 pt-[64px]">
             <div className="grid place-items-center grid-cols-2 lg:grid-cols-4 lg:gap-4">
                 <Logo src={"MS"} alt={"Microsoft"} />
                 <Logo src={"PLSF"} alt={"Premier League Stadium Fund"} />

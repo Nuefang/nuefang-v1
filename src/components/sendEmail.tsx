@@ -5,6 +5,7 @@ export interface emailProps {
     requirements: string;
     business: string;
     contact: string;
+    privacy: boolean;
 }
 
 export default function SendEmail(props: emailProps) {
@@ -14,6 +15,7 @@ export default function SendEmail(props: emailProps) {
         business: 'Business: ' + props.business,
         contact: 'Contact: ' + props.contact,
         requirements: 'Requirements: ' + props.requirements,
+        privacy: 'Privacy Accepted? ' + props.privacy,
     };
     
     emailjs.send('service_mo5n7no', 'template_q67a8th', templateParams, 'jcIvuiN_P6vT6a6GE')

@@ -12,6 +12,7 @@ export default function ContactForm() {
     const [requirements, setRequirements] = useState('');
     const [business, setBusiness] = useState('');
     const [contact, setContact] = useState('');
+    const [privacy, setPrivacy] = useState(false);
     const [sentEmail, setSentEmail] = useState(false);
 
     const handleSubmit = (e: React.FormEvent) => {
@@ -23,6 +24,7 @@ export default function ContactForm() {
                 requirements,
                 business,
                 contact,
+                privacy,
             };
 
             SendEmail(formData);
@@ -31,6 +33,7 @@ export default function ContactForm() {
             setBusiness('');
             setUserName('');
             setContact('');
+            setPrivacy(false);
         }
     };
 
@@ -54,19 +57,15 @@ export default function ContactForm() {
                        onChange={(e) => setBusiness(e.target.value)}
                        required
                 />
-                <p className={`${font.className} w-[85vw] text-[18px] pt-[64px] text-white`}>
+                <p className={`${font.className} w-[85vw] text-[18px] pt-[64px] pb-[10px] text-white`}>
                     How should we get in touch?
-                </p>
-                <p className={`${subFont.className} w-[85vw] text-[18px] text-subTextInvert pb-[10px] text-opacity-80`}>
-                    {/* eslint-disable-next-line react/no-unescaped-entities */}
-                    So we can get back to you - we won't use data for any other reason
                 </p>
                 <input className={`w-[85vw] lg:w-[60vw] p-[16px] h-[50px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Your email address or phone number"}
                        value={contact}
                        onChange={(e) => setContact(e.target.value)}
                        required
                 />
-                <p className={`${font.className} w-[85vw] text-[18px] pt-[64px] text-white`}>
+                <p className={`${font.className} w-[85vw] text-[18px] pt-[64px] pb-[10px] text-white`}>
                     How can we help?
                 </p>
                 <textarea className={`w-[85vw] lg:w-[60vw] p-[16px] h-[200px] ${subFont.className} placeholder:text-[18px] placeholder:text-subText`} placeholder={"Tell us a bit about your requirements"}
@@ -75,6 +74,17 @@ export default function ContactForm() {
                        required
                        rows={6}
                 />
+                <div className={"flex flex-row justify-start items-center space-x-4 pt-[32px] pb-[10px]"}>
+                    <p className={`${font.className} pt-[16px] text-[18px text-white`}>
+                        I accept the <a href={"/privacy"} className={"underline"}>Privacy Policy</a>
+                    </p>
+                    <label className="checkbox-contain">
+                        <input type="checkbox" required defaultChecked={false} checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
+                        <div className="checkbox-input"></div>
+                    </label>
+                </div>
+
+
                 <button className={`${sentEmail ? "hover:bg-green-400" : "hover:bg-lightYellow"} hover:duration-300 hover:text-lightGrey hover:border-0 rounded-xl ctaWhite w-[85vw] mt-[64px] md:mt-[32px] sm:w-[150px] h-[60px]`}
                     type={sentEmail ? undefined : "submit"}
                 >
