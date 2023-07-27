@@ -13,7 +13,7 @@ import HeroLogo from "@/components/heroLogo";
 export default function Home() {
   return (
       <main className="flex flex-col w-[100vw] m-0 p-0">
-        <div id={"home"} className={"pt-[32px] md:pt-[40px] min-h-[100svh] pb-[12svh]"}>
+        <div id={"home"} className={"pt-[32px] md:pt-[40px] h-[100dvh]"}>
           <Navbar />
           <HeroLogo />
         </div>
