@@ -9,7 +9,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className={"flex flex-row justify-between items-center pb-[1svh] md:pb-[32px] w-screen"}>
+        <nav className={"flex flex-row justify-between items-center pb-[1svh] md:pb-[32px] w-screen h-[10%]"}>
             <a href={"/"}>
                 <Image src={"/nuefang.png"} key={"nuefang"} alt={"Nuefang Logo"} width={55} height={55} className={"max-w-[40px] ml-[16px] md:ml-[64px]"} />
             </a>

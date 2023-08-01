@@ -11,19 +11,19 @@ export default function HeroLogo() {
     };
 
     return (
-        <div className={"flex flex-col justify-center items-center pt-[4svh] md:pt-[128px]"}>
-            <div className={"max-w-[250px] sm:max-w-[300px] md:max-w-[400px]"}>
+        <div className={"flex flex-col justify-center items-center pt-[4svh] md:pt-[128px] h-[89%]"}>
+            <div className={"max-w-[250px] sm:max-w-[300px] md:max-w-[400px] flex-squish"}>
                 <Lottie
                     animationData={animationData}
                     loop={true}
                     autoplay={true}
                 />
             </div>
-            <div className={"flex flex-col justify-center items-center h-[30vh]"}>
+            <div className={"flex flex-col justify-center items-center flex-fill"}>
                 <p className={"text-[30px] md:text-[40px] text-center"}>
                     Welcome to nuefang
                 </p>
-                <button onClick={() => {scroll('#whatWeDo')}}>
+                <button onClick={() => {scroll('#whatWeDo')}} className={"flex-squish"}>
                     <Image
                         src={"/icons/arrow_down.png"} alt={"Hero arrow"} width={"60"} height={"60"}
                         className={"max-w-[50px] md:max-w-[100vw] globalHover hover:border-2 hover:border-black"}

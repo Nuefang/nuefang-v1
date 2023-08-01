@@ -298,6 +298,14 @@
     border-color: #1e40af;
 }
 
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.flex-squish {
+    flex: 0 1 auto;
+}
+
 h1 {
     color: white;
     font-size: 32px;
