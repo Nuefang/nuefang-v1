@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import Lottie from "lottie-react";
-import animationData from './../lotties/nuefang.json';
+import {DotLottiePlayer} from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
 
 export default function HeroLogo() {
     const scroll = (sectionId: string) => {
@@ -13,10 +13,10 @@ export default function HeroLogo() {
     return (
         <div className={"flex flex-col justify-center items-center pt-[4svh] md:pt-[128px] h-[89%]"}>
             <div className={"max-w-[250px] sm:max-w-[300px] md:max-w-[400px] flex-squish"}>
-                <Lottie
-                    animationData={animationData}
-                    loop={true}
-                    autoplay={true}
+                <DotLottiePlayer
+                    src={"/lotties/nuefang.lottie"}
+                    loop
+                    autoplay
                 />
             </div>
             <div className={"flex flex-col justify-center items-center flex-fill"}>
