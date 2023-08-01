@@ -79,7 +79,7 @@ export default function ContactForm() {
                         I accept the <a target={"_blank"} href={"/privacy"} className={"underline"}>Privacy Policy</a>
                     </p>
                     <div className="checkbox-contain">
-                        <input type="checkbox" required checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
+                        <input type="checkbox" aria-checked={privacy} required checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
                         <div className="checkbox-input"></div>
                     </div>
                 </div>
