@@ -1,14 +1,15 @@
-import Navbar from "@/components/navbar";
-import Header from "@/components/header";
-import ThreeColumn from "@/components/threeColumn";
-import TwoColumn from "@/components/twoColumn";
-import ContactUs from "@/components/contactUs";
-import LogoRow from "@/components/logoRow";
+import dynamic from 'next/dynamic';
+const Navbar = dynamic(() => import("@/components/navbar"));
+const Header = dynamic(() => import("@/components/header"));
+const ThreeColumn = dynamic(() => import("@/components/threeColumn"));
+const TwoColumn = dynamic(() => import("@/components/twoColumn"));
+const ContactUs = dynamic(() => import("@/components/contactUs"));
+const LogoRow = dynamic(() => import("@/components/logoRow"));
+const FourColumn = dynamic(() => import("@/components/fourColumn"));
+const ContactForm = dynamic(() => import("@/components/contactForm"));
+const Footer = dynamic(() => import("@/components/footer"));
+const HeroLogo  = dynamic(() => import("@/components/heroLogo"));
 import Image from "next/image";
-import FourColumn from "@/components/fourColumn";
-import ContactForm from "@/components/contactForm";
-import Footer from "@/components/footer";
-import HeroLogo from "@/components/heroLogo";
 
 export default function Home() {
   return (

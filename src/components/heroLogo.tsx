@@ -1,8 +1,8 @@
 'use client'
 
 import Image from "next/image";
-import {DotLottiePlayer} from '@dotlottie/react-player';
 import '@dotlottie/react-player/dist/index.css';
+import {useRive} from '@rive-app/react-canvas';
 
 export default function HeroLogo() {
     const scroll = (sectionId: string) => {
@@ -10,14 +10,16 @@ export default function HeroLogo() {
         if (section != null) section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
     };
 
+    const { rive, RiveComponent } = useRive({
+        src: 'https://rive.app/s/W9s8rYr0vUiHeVpwjx407g/',
+        autoplay: true,
+    });
+
     return (
         <div className={"flex flex-col justify-center items-center pt-[4svh] md:pt-[128px] h-[89%]"}>
             <div className={"max-w-[250px] sm:max-w-[300px] md:max-w-[400px] flex-squish"}>
-                <DotLottiePlayer
-                    src={"/lotties/nuefang.lottie"}
-                    loop
-                    autoplay
-                />
+                <iframe className={"border-none w-96 h-96"}
+                        src={"https://rive.app/s/W9s8rYr0vUiHeVpwjx407g/embed"} allowFullScreen></iframe>
             </div>
             <div className={"flex flex-col justify-center items-center flex-fill"}>
                 <p className={"text-[30px] md:text-[40px] text-center"}>
@@ -30,8 +32,6 @@ export default function HeroLogo() {
                     />
                 </button>
             </div>
-
-            {/*<div className={"absolute h-[113px] w-[50vw] md:w-[25vw] lg:w-[50vw] bg-lightYellow bottom-0 right-0 -z-10"} />*/}
         </div>
     )
 }
