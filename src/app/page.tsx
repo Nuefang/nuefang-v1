@@ -9,9 +9,10 @@ const FourColumn = dynamic(() => import("@/components/fourColumn"));
 const ContactForm = dynamic(() => import("@/components/contactForm"));
 const Footer = dynamic(() => import("@/components/footer"));
 const HeroLogo  = dynamic(() => import("@/components/heroLogo"));
+const GridSection = dynamic(() => import("@/components/gridSection"));
+const CTA = dynamic(() => import("@/components/cta"));
+
 import Image from "next/image";
-import GridSection from "@/components/gridSection";
-import CTA from "@/components/cta";
 
 export default function Home() {
   return (
@@ -28,7 +29,12 @@ export default function Home() {
           />
           <ThreeColumn />
         </div>
-          <div>
+          <div className={"bg-lightGrey pb-[12svh] min-h-[100svh]"}>
+              <Header
+                  text={"Our services"}
+                  color={"white"}
+                  width={"lg:max-w-[1350px]"}
+              />
               <GridSection />
               <CTA />
           </div>
