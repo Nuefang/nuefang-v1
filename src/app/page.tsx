@@ -10,6 +10,8 @@ const ContactForm = dynamic(() => import("@/components/contactForm"));
 const Footer = dynamic(() => import("@/components/footer"));
 const HeroLogo  = dynamic(() => import("@/components/heroLogo"));
 import Image from "next/image";
+import GridSection from "@/components/gridSection";
+import CTA from "@/components/cta";
 
 export default function Home() {
   return (
@@ -26,6 +28,10 @@ export default function Home() {
           />
           <ThreeColumn />
         </div>
+          <div>
+              <GridSection />
+              <CTA />
+          </div>
         <div id={"about"} className={"bg-white w-[100vw] min-h-[100svh] pb-[12svh]"}>
             <div className={"flex flex-row justify-center items-center md:block"}>
               <Header
