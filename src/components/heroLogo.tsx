@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import '@dotlottie/react-player/dist/index.css';
-import {useRive} from '@rive-app/react-canvas';
+import Rive from '@rive-app/react-canvas';
 
 export default function HeroLogo() {
     const scroll = (sectionId: string) => {
@@ -10,17 +10,9 @@ export default function HeroLogo() {
         if (section != null) section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
     };
 
-    const { rive, RiveComponent } = useRive({
-        src: 'https://rive.app/s/W9s8rYr0vUiHeVpwjx407g/',
-        autoplay: true,
-    });
-
     return (
         <div className={"flex flex-col justify-center items-center pt-[4svh] md:pt-[128px] h-[89%]"}>
-            <div className={"max-w-[250px] sm:max-w-[300px] md:max-w-[400px] flex-squish"}>
-                <iframe className={"border-none w-96 h-96"}
-                        src={"https://rive.app/s/W9s8rYr0vUiHeVpwjx407g/embed"} allowFullScreen></iframe>
-            </div>
+            <Rive className={"w-[200px] h-[200px] sm:w-[300px] md:w-[400px] md:h-[400px]"} src="/lotties/nuefang.riv" />
             <div className={"flex flex-col justify-center items-center flex-fill"}>
                 <p className={"text-[30px] md:text-[40px] text-center"}>
                     Welcome to nuefang

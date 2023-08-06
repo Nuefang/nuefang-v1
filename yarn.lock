@@ -2284,6 +2284,11 @@ rimraf@^3.0.2:
   dependencies:
     glob "^7.1.3"
 
+rive-canvas@^0.7.6:
+  version "0.7.6"
+  resolved "https://registry.npmjs.org/rive-canvas/-/rive-canvas-0.7.6.tgz"
+  integrity sha512-RoZocagAmHs3lhD8nYrpxMtNObMREqdL4kSk63dkQOrKRdtby/N8S9bWFXxPo1kMCZBQz50JiTy4+Ink7QpRLA==
+
 rive-react@^4.1.0:
   version "4.1.0"
   resolved "https://registry.npmjs.org/rive-react/-/rive-react-4.1.0.tgz"
