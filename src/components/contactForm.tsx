@@ -74,15 +74,15 @@ export default function ContactForm() {
                        required
                        rows={6}
                 />
-                <div className={"flex flex-row justify-start items-center space-x-4 pt-[32px] pb-[10px]"}>
+                <span className={"flex flex-row justify-start items-center space-x-4 pt-[32px] pb-[10px]"}>
                     <p className={`${font.className} pt-[16px] text-[18px text-white`}>
                         I accept the <a target={"_blank"} href={"/privacy"} className={"underline"}>Privacy Policy</a>
                     </p>
-                    <div className="checkbox-contain">
+                    <span className="checkbox-contain">
                         <input type="checkbox" aria-label={"Privacy"} aria-checked={privacy} required checked={privacy} onChange={(e) => setPrivacy(!privacy)}/>
                         <div className="checkbox-input"></div>
-                    </div>
-                </div>
+                    </span>
+                </span>
 
 
                 <button className={`${sentEmail ? "hover:bg-green-400" : "hover:bg-lightYellow"} hover:duration-300 hover:text-lightGrey hover:border-0 rounded-xl ctaWhite w-[85vw] mt-[64px] md:mt-[32px] sm:w-[150px] h-[60px]`}

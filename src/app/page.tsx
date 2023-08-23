@@ -1,14 +1,18 @@
-import Navbar from "@/components/navbar";
-import Header from "@/components/header";
-import ThreeColumn from "@/components/threeColumn";
-import TwoColumn from "@/components/twoColumn";
-import ContactUs from "@/components/contactUs";
-import LogoRow from "@/components/logoRow";
+import dynamic from 'next/dynamic';
+const Navbar = dynamic(() => import("@/components/navbar"));
+const Header = dynamic(() => import("@/components/header"));
+const ThreeColumn = dynamic(() => import("@/components/threeColumn"));
+const TwoColumn = dynamic(() => import("@/components/twoColumn"));
+const ContactUs = dynamic(() => import("@/components/contactUs"));
+const LogoRow = dynamic(() => import("@/components/logoRow"));
+const FourColumn = dynamic(() => import("@/components/fourColumn"));
+const ContactForm = dynamic(() => import("@/components/contactForm"));
+const Footer = dynamic(() => import("@/components/footer"));
+const HeroLogo  = dynamic(() => import("@/components/heroLogo"));
+const GridSection = dynamic(() => import("@/components/gridSection"));
+const CTA = dynamic(() => import("@/components/cta"));
+
 import Image from "next/image";
-import FourColumn from "@/components/fourColumn";
-import ContactForm from "@/components/contactForm";
-import Footer from "@/components/footer";
-import HeroLogo from "@/components/heroLogo";
 
 export default function Home() {
   return (
@@ -25,6 +29,15 @@ export default function Home() {
           />
           <ThreeColumn />
         </div>
+          <div className={"bg-lightGrey pb-[12svh] min-h-[100svh]"}>
+              <Header
+                  text={"Our services"}
+                  color={"white"}
+                  width={"lg:max-w-[1350px]"}
+              />
+              <GridSection />
+              <CTA />
+          </div>
         <div id={"about"} className={"bg-white w-[100vw] min-h-[100svh] pb-[12svh]"}>
             <div className={"flex flex-row justify-center items-center md:block"}>
               <Header
